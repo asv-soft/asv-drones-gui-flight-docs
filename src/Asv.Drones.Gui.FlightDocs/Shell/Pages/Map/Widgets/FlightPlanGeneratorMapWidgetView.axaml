@@ -1,0 +1,102 @@
+﻿<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:flightDocs="clr-namespace:Asv.Drones.Gui.FlightDocs"
+             xmlns:avalonia="clr-namespace:Material.Icons.Avalonia;assembly=Material.Icons.Avalonia"
+             mc:Ignorable="d" d:DesignWidth="600" d:DesignHeight="550"
+             x:Class="Asv.Drones.Gui.FlightDocs.FlightPlanGeneratorMapWidgetView"
+             x:DataType="flightDocs:FlightPlanGeneratorMapWidgetViewModel">
+    <Design.DataContext>
+        <flightDocs:FlightPlanGeneratorMapWidgetViewModel />
+    </Design.DataContext>
+    <Border Padding="8" Background="{DynamicResource SolidBackgroundFillColorBase}" Opacity="0.8" CornerRadius="{DynamicResource ControlCornerRadius}" ClipToBounds="True">
+        <StackPanel Spacing="5">
+            <StackPanel Margin="0 0 0 5" Orientation="Horizontal" Spacing="8">
+                <avalonia:MaterialIcon Kind="{CompiledBinding Icon}"/>
+                <TextBlock Text="{CompiledBinding Title}"/>
+            </StackPanel>
+            <Grid ColumnDefinitions="*, 10, 2*">
+                <TextBlock Text="{x:Static flightDocs:RS.FlightPlanGeneratorMapWidgetView_StartTime_Title}" TextWrapping="Wrap" Grid.Column="0" />
+                <TimePicker Grid.Column="2" SelectedTime="{CompiledBinding FlightStartTime.TimeOfDay}" />
+            </Grid>
+            <Grid ColumnDefinitions="*, 10, 2*">
+                <TextBlock Text="{x:Static flightDocs:RS.FlightPlanGeneratorMapWidgetView_MinAlt_Title}" TextWrapping="NoWrap" Grid.Column="0" />
+                <TextBox Text="{CompiledBinding FlightMinAltitude}" Grid.Column="2">
+                    <TextBox.InnerRightContent>
+                        <TextBlock Text="{CompiledBinding AltitudeUnits}" VerticalAlignment="Center" Margin="8 4" />
+                    </TextBox.InnerRightContent>
+                </TextBox>
+            </Grid>
+            <Grid ColumnDefinitions="*, 10, 2*">
+                <TextBlock Text="{x:Static flightDocs:RS.FlightPlanGeneratorMapWidgetView_MaxAlt_Title}" TextWrapping="NoWrap" Grid.Column="0" />
+                <TextBox Text="{CompiledBinding FlightMaxAltitude}" Grid.Column="2">
+                    <TextBox.InnerRightContent>
+                        <TextBlock Text="{CompiledBinding AltitudeUnits}" VerticalAlignment="Center" Margin="8 4" />
+                    </TextBox.InnerRightContent>
+                </TextBox>
+            </Grid>
+            <Grid ColumnDefinitions="*, 10, 2*">
+                <TextBlock Text="{x:Static flightDocs:RS.FlightPlanGeneratorMapWidgetView_FlightTime_Title}" TextWrapping="NoWrap" Grid.Column="0" />
+                <TextBox Text="{CompiledBinding FlightTime}" Grid.Column="2" />
+            </Grid>
+            <Grid ColumnDefinitions="*, 10, 2*">
+                <TextBlock Text="{x:Static flightDocs:RS.FlightPlanGeneratorMapWidgetView_FlightDate_Title}" TextWrapping="NoWrap" Grid.Column="0" />
+                <DatePicker Grid.Column="2" SelectedDate="{CompiledBinding FlightStartTime}" />
+            </Grid>
+            <Grid ColumnDefinitions="*, 10, 2*">
+                <TextBlock Text="{x:Static flightDocs:RS.FlightPlanGeneratorMapWidgetView_AirportCode_Title}" TextWrapping="NoWrap" Grid.Column="0" />
+                <TextBox Text="{CompiledBinding AirportCode}" Grid.Column="2" />
+            </Grid>
+            <Grid ColumnDefinitions="*, 10, 2*">
+                <TextBlock Text="{x:Static flightDocs:RS.FlightPlanGeneratorMapWidgetView_CompanyName_Title}" TextWrapping="NoWrap" Grid.Column="0" />
+                <TextBox Text="{CompiledBinding CompanyName}" Grid.Column="2" />
+            </Grid>
+            <Grid ColumnDefinitions="*, 10, 2*" RowDefinitions="*, 5, Auto">
+                <TextBlock Text="{x:Static flightDocs:RS.FlightPlanGeneratorMapWidgetView_RegNumbers_Title}" TextWrapping="NoWrap" />
+                <StackPanel Grid.Row="0" Grid.Column="2" Orientation="Horizontal" Spacing="5">
+                    <Button Command="{Binding AddRegNumberCommand}">
+                        <avalonia:MaterialIcon Kind="Plus" />
+                    </Button>
+                    <Button Command="{Binding RemoveRegNumberCommand}">
+                        <avalonia:MaterialIcon Kind="Minus" />
+                    </Button>
+                </StackPanel>
+                <ItemsControl Grid.Row="2" Grid.Column="2" ItemsSource="{Binding RegNumbers, Mode=TwoWay}">
+                    <ItemsControl.ItemsPanel>
+                        <ItemsPanelTemplate>
+                            <StackPanel Spacing="3" />
+                        </ItemsPanelTemplate>
+                    </ItemsControl.ItemsPanel>
+                    <ItemsControl.ItemTemplate>
+                        <DataTemplate>
+                            <TextBox Text="{Binding RegistrationNumber}" />
+                        </DataTemplate>
+                    </ItemsControl.ItemTemplate>
+                </ItemsControl>
+            </Grid>
+            <Grid ColumnDefinitions="*, 10, 2*">
+                <TextBlock Text="{x:Static flightDocs:RS.FlightPlanGeneratorMapWidgetView_VrMrNumber_Title}" TextWrapping="NoWrap" Grid.Column="0" />
+                <TextBox Text="{CompiledBinding VrMrNumber}" Grid.Column="2" />
+            </Grid>
+            <Grid ColumnDefinitions="*, 10, 2*">
+                <TextBlock VerticalAlignment="Center" Text="{x:Static flightDocs:RS.FlightPlanGeneratorMapWidgetView_AdditionalInfo_Title}" TextWrapping="NoWrap" Grid.Column="0" />
+                <TextBox Grid.Row="0" TextWrapping="Wrap" Text="{CompiledBinding AdditionalInfo}" Grid.Column="2" />
+            </Grid>
+            <Grid ColumnDefinitions="*, 10, 2*">
+                <TextBlock Text="{x:Static flightDocs:RS.FlightPlanGeneratorMapWidgetView_UavOperatorName_Title}" TextWrapping="NoWrap" Grid.Column="0" />
+                <TextBox Text="{CompiledBinding UavOperatorName}" Grid.Column="2" />
+            </Grid>
+            <Grid ColumnDefinitions="*, 10, 2*">
+                <TextBlock Text="{x:Static flightDocs:RS.FlightPlanGeneratorMapWidgetView_Altitude_Title}" TextWrapping="NoWrap" Grid.Column="0" />
+                <TextBox Text="{CompiledBinding Altitude}" Grid.Column="2" />
+            </Grid>
+            <Button HorizontalAlignment="Stretch" Command="{CompiledBinding GenerateFlightPlanCommand}">
+                <TextBlock Text="{x:Static flightDocs:RS.FlightPlanGeneratorMapWidgetView_GenerateText_Title}" />
+            </Button>
+            <Button HorizontalAlignment="Stretch" Command="{CompiledBinding SaveToCfgCommand}">
+                <TextBlock Text="{x:Static flightDocs:RS.FlightPlanGeneratorMapWidgetView_SaveToCfg_Title}" />
+            </Button>
+        </StackPanel>
+    </Border>
+</UserControl>

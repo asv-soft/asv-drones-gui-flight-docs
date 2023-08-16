@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+    <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <xsd:element name="root" msdata:IsDataSet="true">
+            
+        </xsd:element>
+    </xsd:schema>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <data name="FlightZoneMapWidgetViewModel_Title" xml:space="preserve">
+        <value>Редактор точек зоны полета</value>
+    </data>
+    <data name="FlightZoneMapWidgetView_Altitude_Title" xml:space="preserve">
+        <value>Высота</value>
+    </data>
+    <data name="FlightZoneMapWidgetView_Latitude_Title" xml:space="preserve">
+        <value>Широта</value>
+    </data>
+    <data name="FlightZoneMapWidgetView_Longitude_Title" xml:space="preserve">
+        <value>Долгота</value>
+    </data>
+    <data name="FlightZoneMapWidgetView_Name_Title" xml:space="preserve">
+        <value>Имя</value>
+    </data>
+    <data name="FlightZoneMapWidgetView_Remove_Title" xml:space="preserve">
+        <value>Удалить</value>
+    </data>
+    <data name="HeaderFlightDocsMenuItem_Title" xml:space="preserve">
+        <value>Зона полетов</value>
+    </data>
+    <data name="FlightZoneAnchor_Name" xml:space="preserve">
+        <value>Точка</value>
+    </data>
+    <data name="TakeOffLandAnchor_Name" xml:space="preserve">
+        <value>Точка</value>
+    </data>
+    <data name="FlightZoneActionViewModel_SelectPoint_Title" xml:space="preserve">
+        <value>Выберите точки</value>
+    </data>
+    <data name="TakeOffLandActionViewModel_SelectLandPoint_Title" xml:space="preserve">
+        <value>Выберите точку посадки</value>
+    </data>
+    <data name="TakeOffLandActionViewModel_SelectTakeOffPoint_Title" xml:space="preserve">
+        <value>Выберите точку взлета</value>
+    </data>
+    <data name="TakeOffLandMapWidgetViewModel_Title" xml:space="preserve">
+        <value>Редактор точек взлета и посадки</value>
+    </data>
+    <data name="FlightPlanGeneratorMapWidgetViewModel_Title" xml:space="preserve">
+        <value>Генератор текста плана полетов</value>
+    </data>
+    <data name="FlightPlanGeneratorMapWidgetView_StartTime_Title" xml:space="preserve">
+        <value>Время начала</value>
+    </data>
+    <data name="FlightPlanGeneratorMapWidgetView_MaxAlt_Title" xml:space="preserve">
+        <value>Максимальная высота</value>
+    </data>
+    <data name="FlightPlanGeneratorMapWidgetView_MinAlt_Title" xml:space="preserve">
+        <value>Минимальная высота</value>
+    </data>
+    <data name="FlightPlanGeneratorMapWidgetView_AdditionalInfo_Title" xml:space="preserve">
+        <value>Доп инфо</value>
+    </data>
+    <data name="FlightPlanGeneratorMapWidgetView_AirportCode_Title" xml:space="preserve">
+        <value>Код аэропорта</value>
+    </data>
+    <data name="FlightPlanGeneratorMapWidgetView_CompanyName_Title" xml:space="preserve">
+        <value>Название компании</value>
+    </data>
+    <data name="FlightPlanGeneratorMapWidgetView_FlightTime_Title" xml:space="preserve">
+        <value>Продолжительность полета</value>
+    </data>
+    <data name="FlightPlanGeneratorMapWidgetView_RegNumbers_Title" xml:space="preserve">
+        <value>Рег номера</value>
+    </data>
+    <data name="FlightPlanGeneratorMapWidgetView_UavCount_Title" xml:space="preserve">
+        <value>К-во БВС</value>
+    </data>
+    <data name="FlightPlanGeneratorMapWidgetView_UavOperatorName_Title" xml:space="preserve">
+        <value>Оператор БВС</value>
+    </data>
+    <data name="FlightPlanGeneratorMapWidgetView_VrMrNumber_Title" xml:space="preserve">
+        <value>Номер ВР или МР</value>
+    </data>
+    <data name="FlightPlanGeneratorMapWidgetView_FlightDate_Title" xml:space="preserve">
+        <value>Дата полета</value>
+    </data>
+    <data name="FlightPlanGeneratorMapWidgetView_GenerateText_Title" xml:space="preserve">
+        <value>Сгенерировать</value>
+    </data>
+    <data name="FlightPlanGeneratorMapWidgetView_Altitude_Title" xml:space="preserve">
+        <value>Высота</value>
+    </data>
+    <data name="FlightPlanGeneratorMapWidgetView_SaveToCfg_Title" xml:space="preserve">
+        <value>Сохранить</value>
+    </data>
+    <data name="FlightPlanViewModel_Title" xml:space="preserve">
+        <value>План полета</value>
+    </data>
+    <data name="FlightPlanViewModel_PrimaryButtonText" xml:space="preserve">
+        <value>Ок</value>
+    </data>
+</root>
