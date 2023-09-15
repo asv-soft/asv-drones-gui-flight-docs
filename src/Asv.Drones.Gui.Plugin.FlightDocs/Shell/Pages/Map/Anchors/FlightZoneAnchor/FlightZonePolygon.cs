@@ -51,7 +51,7 @@ public class FlightZonePolygon : MapAnchorBase
 
     private void UpdatePath()
     {
-        var items = _flightZoneMap.FlightZoneAnchors.Items.ToArray();
+        var items = _flightZoneMap.FlightZoneAnchors.Items.Where(x => x.GetType() != typeof(FlightZonePolygon)).ToArray();
         _cache.Clear();
         _cache.AddRange(items);
     }
