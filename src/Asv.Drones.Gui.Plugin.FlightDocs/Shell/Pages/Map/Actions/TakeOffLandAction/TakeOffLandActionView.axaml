@@ -20,7 +20,7 @@
             <Setter Property="Background" Value="Transparent" />
         </Style>
     </UserControl.Styles>
-    <ToggleButton IsChecked="{CompiledBinding IsTakeOffLandModeEnabled, Mode=TwoWay}" Classes="MapBottomButton">
+    <ToggleButton IsChecked="{CompiledBinding IsTakeOffLandModeEnabled}" Classes="MapBottomButton">
         <avalonia:MaterialIcon Kind="AirplaneTakeoff" />
     </ToggleButton>
 </UserControl>

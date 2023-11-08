@@ -57,9 +57,10 @@ public class FlightZoneMapViewModel : MapPageViewModel, IFlightZoneMap
 
     [ImportingConstructor]
     public FlightZoneMapViewModel(IMapService map, IConfiguration cfg, ILocalizationService loc,
+        [ImportMany(HeaderMenuItem.UriString)]IEnumerable<IHeaderMenuItem> exportedMenuItems,
         [ImportMany(UriString)] IEnumerable<IViewModelProvider<IMapAnchor>> markers,
         [ImportMany(UriString)] IEnumerable<IViewModelProvider<IMapWidget>> widgets,
-        [ImportMany(UriString)] IEnumerable<IViewModelProvider<IMapAction>> actions) : base(Uri,map,markers,widgets,actions)
+        [ImportMany(UriString)] IEnumerable<IViewModelProvider<IMapAction>> actions) : base(Uri,map,exportedMenuItems,markers,widgets,actions)
     {
         _cfg = cfg;
         _flightConfig = cfg.Get<FlightZoneMapViewModelConfig>();

@@ -20,7 +20,7 @@
             <Setter Property="Background" Value="Transparent" />
         </Style>
     </UserControl.Styles>
-    <ToggleButton IsChecked="{CompiledBinding IsEditModeEnabled, Mode=TwoWay}" Classes="MapBottomButton">
+    <ToggleButton IsChecked="{CompiledBinding IsEditModeEnabled}" Classes="MapBottomButton">
         <avalonia:MaterialIcon Kind="ControlPoint" />
     </ToggleButton>
 </UserControl>
