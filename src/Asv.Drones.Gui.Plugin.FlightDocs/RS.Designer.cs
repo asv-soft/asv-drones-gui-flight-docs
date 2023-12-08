@@ -38,7 +38,7 @@ namespace Asv.Drones.Gui.Plugin.FlightDocs {
         public static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Asv.Drones.Gui.Plugin.FlightDocs.RS", typeof(RS).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Asv.Drones.Gui.FlightDocs.RS", typeof(RS).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -296,9 +296,9 @@ namespace Asv.Drones.Gui.Plugin.FlightDocs {
         /// <summary>
         ///   Looks up a localized string similar to Flight Zone.
         /// </summary>
-        public static string HeaderFlightDocsMenuItem_Title {
+        public static string FlightZoneShellMenuItem_Header_Title {
             get {
-                return ResourceManager.GetString("HeaderFlightDocsMenuItem_Title", resourceCulture);
+                return ResourceManager.GetString("FlightZoneShellMenuItem_Header_Title", resourceCulture);
             }
         }
         

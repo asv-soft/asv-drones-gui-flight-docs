@@ -36,7 +36,7 @@
     <data name="FlightZoneMapWidgetView_Remove_Title" xml:space="preserve">
         <value>Удалить</value>
     </data>
-    <data name="HeaderFlightDocsMenuItem_Title" xml:space="preserve">
+    <data name="FlightZoneShellMenuItem_Header_Title" xml:space="preserve">
         <value>Зона полетов</value>
     </data>
     <data name="FlightZoneAnchor_Name" xml:space="preserve">

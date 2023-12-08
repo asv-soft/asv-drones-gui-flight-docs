@@ -10,7 +10,7 @@ public class FlightZoneShellMenuItem : ShellMenuItem
 {
     public FlightZoneShellMenuItem() : base("asv:shell.menu.flight-docs")
     {
-        Name = RS.HeaderFlightDocsMenuItem_Title;
+        Name = RS.FlightZoneShellMenuItem_Header_Title;
         NavigateTo = FlightZoneMapViewModel.Uri;
         Icon = MaterialIconDataProvider.GetData(MaterialIconKind.DocumentSign);
         Position = ShellMenuPosition.Top;
